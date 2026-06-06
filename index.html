@@ -3,54 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
 </head>
 <body>
-    <form action="/action.php">
+
+<form action="/action.php">
+
     <h1>Registration Form</h1>
-    <br>  <br>
-    <input type="text" placeholder="username">
-    <br>  <br>
-    <input type="password" placeholder="password">
-    <br>  <br>
+
+    <br><br>
+
+    <label for="username">Username</label>
+    <br>
+    <input type="text" id="username" name="username" placeholder="Enter username">
+
+    <br><br>
+
+    <label for="password">Password</label>
+    <br>
+    <input type="password" id="password" name="password" placeholder="Enter password">
+
+    <br><br>
+
     <h4>Select your class</h4>
-    <br>  <br>
+
     <label>
-    <input type="radio" value="class=IX" name=class id="101"> Class IX
+        <input type="radio" name="class" value="IX">
+        Class IX
     </label>
-    <br>  <br>
+
+    <br><br>
+
     <label>
-    <input type="radio" value="class=X" name=class id="102"> Class X
+        <input type="radio" name="class" value="X">
+        Class X
     </label>
-    <br>  <br>
+
+    <br><br>
+
     <h4>Select favourite subject</h4>
+
     <label>
-    <input type="checkbox" value="Physics" name="physics"> Physics 
+        <input type="checkbox" name="subject" value="Physics">
+        Physics
     </label>
-    <br>  <br>
+
+    <br><br>
+
     <label>
-    <input type="checkbox" value="math" name="math"> Math
+        <input type="checkbox" name="subject" value="Math">
+        Math
     </label>
-    <br>  <br>
+
+    <br><br>
+
     <label>
-    <input type="checkbox" value="English" name="English"> English
+        <input type="checkbox" name="subject" value="English">
+        English
     </label>
-    <br>  <br>
+
+    <br><br>
+
     <label>
-    <input type="checkbox" value="Chemistery" name="Chemistery"> Chemistery
+        <input type="checkbox" name="subject" value="Chemistry">
+        Chemistry
     </label>
-    <br>  <br>
+
+    <br><br>
+
     <h4>Select your city</h4>
-    <select>
+
+    <select name="city" id="city">
         <option value="Delhi">Delhi</option>
         <option value="Agra">Agra</option>
-        <option value="sikandra rao">Sikandra Rao</option>
+        <option value="Sikandra Rao">Sikandra Rao</option>
         <option value="Aligarh">Aligarh</option>
     </select>
-    <br>  <br>
-    <textarea placeholder="Please add feedblack"></textarea>
-    <br>  <br>
-    <button>Submit me </button>
+
+    <br><br>
+
+    <label for="feedback">Feedback</label>
+    <br>
+    <textarea id="feedback" name="feedback" placeholder="Write your feedback here"></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
 </form>
+
 </body>
 </html>
